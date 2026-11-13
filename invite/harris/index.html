@@ -4,42 +4,110 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#100c08">
+  <meta name="theme-color" content="#111a2c">
   <title>Lytt Experience | A personal invitation from Lytt</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root { color-scheme: dark; background: #100c08; color: #fbf0dc; font: 100%/1.55 "DM Sans", sans-serif; }
+    :root {
+      color-scheme: dark;
+      font: 100%/1.5 "DM Sans", system-ui, sans-serif;
+      color: #f7faff;
+      background: #111a2c;
+    }
     * { box-sizing: border-box; }
-    body { margin: 0; background: radial-gradient(ellipse at 50% 0, #322114 0, #100c08 58%); }
-    main { width: min(100% - 2rem, 38rem); margin: auto; min-height: 100svh; padding: clamp(2rem, 7vh, 5rem) 0; text-align: center; }
-    header p { margin: 0; }
-    .event { color: #ebbb76; font-weight: 600; letter-spacing: .24em; font-size: .8rem; }
-    h1 { margin: .8rem 0; font: 600 clamp(2.5rem, 8vw, 4.6rem)/1.04 "Playfair Display", Georgia, serif; letter-spacing: -.04em; }
-    h1 em { display: block; color: #ebbb76; font-weight: 600; }
-    .date { color: #e2cdb0; }
-    .video { position: relative; display: grid; place-items: center; aspect-ratio: 16 / 9; margin: 1.75rem 0 1.25rem; border: 1px solid #775332; border-radius: 1rem; overflow: hidden; background: radial-gradient(ellipse at 50% 35%, #55371f, #21150e 68%, #18110c); }
-    .video iframe { width: 100%; height: 100%; border: 0; }
-    .video p { padding: 1rem; color: #efddc2; }
-    .rsvp { display: block; padding: .9rem 1.2rem; min-height: 3rem; border-radius: .6rem; background: #ebbb76; color: #201408; font-weight: 600; text-decoration: none; }
-    .rsvp[aria-disabled="true"] { background: #34261a; color: #e2cdb0; }
-    footer { margin-top: 2rem; color: #ebbb76; letter-spacing: .3em; font-size: .8rem; font-weight: 600; }
-    a:focus-visible { outline: 2px solid #fff0d8; outline-offset: 4px; }
+    body {
+      margin: 0;
+      min-height: 100svh;
+      background: radial-gradient(ellipse at 22% 0%, #435e8b, transparent 58%),
+                  radial-gradient(ellipse at 92% 100%, #483c67, transparent 55%), #111a2c;
+    }
+    main {
+      width: min(calc(100% - 1.5rem), 27rem);
+      margin: auto;
+      padding: clamp(.75rem, 4vh, 3rem) 0;
+    }
+    article {
+      overflow: hidden;
+      padding: clamp(.85rem, 4vw, 1.5rem);
+      border-radius: 2rem;
+      border: 1px solid #c1d8ff52;
+      background: linear-gradient(145deg, #adceff2b, #9ba9f612 64%, #ced7ff22);
+      box-shadow: inset 0 1px #e6f2ff42, 0 1.5rem 5rem #080d1d66;
+    }
+    .event { margin: .1rem 0 1rem; font-weight: 700; letter-spacing: -.025em; }
+    .video {
+      position: relative;
+      display: grid;
+      align-items: end;
+      isolation: isolate;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border: 1px solid #d9e5ff45;
+      border-radius: 1.3rem;
+      background: #192743;
+    }
+    .video img, .video iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video img { object-fit: cover; object-position: center 36%; z-index: -2; }
+    .video::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(transparent 30%, #0a1221d9);
+      z-index: -1;
+    }
+    .video p {
+      justify-self: start;
+      margin: .8rem;
+      padding: .45rem .8rem;
+      border: 1px solid #c6dfff66;
+      border-radius: 2rem;
+      background: #15233bd9;
+      color: #f4f7ff;
+      font-size: .8125rem;
+      backdrop-filter: blur(12px);
+    }
+    h1 { margin: 1.15rem 0 .45rem; font-size: clamp(2rem, 7.5vw, 2.85rem); line-height: 1.04; letter-spacing: -.06em; }
+    .details { margin: 0; color: #dbe6f8; }
+    .details time { display: block; color: #f7faff; font-weight: 600; }
+    .rsvp {
+      display: grid;
+      place-items: center;
+      width: 100%;
+      min-height: 3.15rem;
+      margin-top: 1.2rem;
+      padding: .75rem 1rem;
+      border: 1px solid #c4d8ff70;
+      border-radius: 2rem;
+      background: #b3ceff32;
+      color: #f7faff;
+      font: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      opacity: 1;
+    }
+    a:focus-visible { outline: 2px solid white; outline-offset: 4px; }
   </style>
 </head>
 <body>
   <main>
-    <header>
-      <p class="event">Lytt Experience</p>
-      <h1>Harris, <em>I saved you a seat.</em></h1>
-      <p class="date"><time datetime="2026-12-28">28 December 2026</time> · An intimate live set with Lytt</p>
-    </header>
-    <section class="video" aria-label="Personal video invitation">
-      <p>Your personal video invitation is coming soon.</p>
-    </section>
-    <div class="rsvp" role="button" aria-disabled="true">RSVP opens soon</div>
-    <footer>Lytt</footer>
+    <article aria-labelledby="greeting">
+      <header><p class="event">Lytt Experience</p></header>
+      <section class="video" aria-label="Personal video invitation">
+        <img src="/assets/images/lytt-silhouette.jpg" alt="" width="960" height="1440">
+        <p>Personal video coming soon</p>
+      </section>
+      <h1 id="greeting">Harris, I saved you a seat.</h1>
+      <p class="details"><time datetime="2026-12-28">28 December 2026</time>An intimate live set with Lytt</p>
+      <button class="rsvp" type="button" disabled>RSVP opens soon</button>
+    </article>
   </main>
 </body>
 </html>
