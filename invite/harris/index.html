@@ -1,45 +1,38 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#100c08">
-  <title>Lytt Experience | A personal invitation from Lytt</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-  <style>
-    :root { color-scheme: dark; background: #100c08; color: #fbf0dc; font: 100%/1.55 "DM Sans", sans-serif; }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: radial-gradient(ellipse at 50% 0, #322114 0, #100c08 58%); }
-    main { width: min(100% - 2rem, 38rem); margin: auto; min-height: 100svh; padding: clamp(2rem, 7vh, 5rem) 0; text-align: center; }
-    header p { margin: 0; }
-    .event { color: #ebbb76; font-weight: 600; letter-spacing: .24em; font-size: .8rem; }
-    h1 { margin: .8rem 0; font: 600 clamp(2.5rem, 8vw, 4.6rem)/1.04 "Playfair Display", Georgia, serif; letter-spacing: -.04em; }
-    h1 em { display: block; color: #ebbb76; font-weight: 600; }
-    .date { color: #e2cdb0; }
-    .video { position: relative; display: grid; place-items: center; aspect-ratio: 16 / 9; margin: 1.75rem 0 1.25rem; border: 1px solid #775332; border-radius: 1rem; overflow: hidden; background: radial-gradient(ellipse at 50% 35%, #55371f, #21150e 68%, #18110c); }
-    .video iframe { width: 100%; height: 100%; border: 0; }
-    .video p { padding: 1rem; color: #efddc2; }
-    .rsvp { display: block; padding: .9rem 1.2rem; min-height: 3rem; border-radius: .6rem; background: #ebbb76; color: #201408; font-weight: 600; text-decoration: none; }
-    .rsvp[aria-disabled="true"] { background: #34261a; color: #e2cdb0; }
-    footer { margin-top: 2rem; color: #ebbb76; letter-spacing: .3em; font-size: .8rem; font-weight: 600; }
-    a:focus-visible { outline: 2px solid #fff0d8; outline-offset: 4px; }
-  </style>
-</head>
-<body>
-  <main>
-    <header>
-      <p class="event">Lytt Experience</p>
-      <h1>Harris, <em>I saved you a seat.</em></h1>
-      <p class="date"><time datetime="2026-12-28">28 December 2026</time> · An intimate live set with Lytt</p>
-    </header>
-    <section class="video" aria-label="Personal video invitation">
-      <p>Your personal video invitation is coming soon.</p>
-    </section>
-    <div class="rsvp" role="button" aria-disabled="true">RSVP opens soon</div>
-    <footer>Lytt</footer>
-  </main>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#2b1521"><title>Lytt Experience | A personal invitation from Lytt</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;background:radial-gradient(ellipse at 50% 20%,#642c41,#2b1521 66%);color:#f9e8e4;font:16px/1.55 system-ui,sans-serif}
+main{width:min(100% - 2rem,34rem);margin:auto;padding:clamp(2rem,7vh,5rem) 0;text-align:center}
+.eyebrow{font-size:.85rem;letter-spacing:.18em;margin:0 0 1.4rem}
+details{color:#431c2d}
+summary{position:relative;isolation:isolate;overflow:hidden;display:grid;place-content:center;justify-items:center;gap:.65rem;min-height:15rem;padding:2rem 1rem;list-style:none;cursor:pointer;border-radius:.4rem;background:#ead3c2;box-shadow:0 22px 48px #13061066}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(152deg,transparent 49.6%,#ad7b7755 50%,transparent 50.4%) left/50% 100% no-repeat,linear-gradient(208deg,transparent 49.6%,#ad7b7755 50%,transparent 50.4%) right/50% 100% no-repeat}
+.recipient{font:italic clamp(2.2rem,8vw,3.4rem)/1 Georgia,serif}
+.seal{display:grid;place-items:center;width:3.2rem;aspect-ratio:1;border-radius:48% 51% 46% 50%;background:radial-gradient(circle at 30% 20%,#9b4258,#611e35 72%);box-shadow:inset 0 0 0 4px #f4a6b02b,0 3px 7px #4c142862;color:#ffe6d8;font:italic 1.55rem Georgia,serif}
+.open{font-size:.9rem;font-weight:650}.close{display:none}details[open] .open{display:none}details[open] .close{display:inline}details[open] summary{min-height:0;padding:.75rem}details[open] summary .seal,details[open] summary .recipient{display:none}
+article{margin-top:.5rem;border-radius:.35rem;background:#fff2e6;padding:clamp(1.3rem,6vw,2.8rem);text-align:left;box-shadow:0 22px 48px #13061066}
+article p{margin:.65rem 0}
+h1{font:normal clamp(2rem,7vw,3.35rem)/1.04 Georgia,serif;margin:.35rem 0 1rem;letter-spacing:-.045em}
+.date{font-weight:700}.sign{font:italic 1.55rem Georgia,serif}
+.video{margin-top:1.4rem;padding:1rem;border:1px dashed #a66478;border-radius:.5rem;background:#f5dfe0}
+.video strong{display:block}.video span{font-size:.9rem}
+.rsvp{margin:1rem 0 0;padding:.65rem;text-align:center;border-radius:.4rem;background:#f0d6da;font-weight:650}
+summary:focus-visible{outline:3px solid #fff;outline-offset:5px}
+</style></head>
+<body><main>
+<p class="eyebrow">Lytt Experience</p>
+<details>
+<summary><span class="recipient">For Harris</span><span class="seal" aria-hidden="true">L</span><span class="open">Open your invitation</span><span class="close">Close invitation</span></summary>
+<article>
+<p class="date"><time datetime="2026-12-28">28 December 2026</time></p>
+<h1>Harris, I saved you a seat.</h1>
+<p>I’d love to have you there for a small live set. I’ll share some songs from <em>Rose &amp; Promises</em> and a few stories behind them.</p>
+<p class="sign">Lytt</p>
+<div class="video"><strong>A personal video for you</strong><span>Coming soon</span></div>
+<p class="rsvp">RSVP opens soon</p>
+</article>
+</details>
+</main></body></html>
