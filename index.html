@@ -46,6 +46,15 @@ details a{display:inline-flex;align-items:center;min-height:44px}
 .contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.contact-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.15rem .75rem;padding:.7rem 0;border-bottom:1px solid var(--line)}
 footer{border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem;padding-block:1rem}
 @media(max-width:650px){.spread,.contact-inner{grid-template-columns:1fr}.spread picture{aspect-ratio:4/3}.spread img{object-position:center 37%}}
+.featured-release{display:grid;grid-template-columns:minmax(0,10rem) minmax(0,1fr);gap:clamp(.85rem,3vw,2rem);align-items:center;margin:1.25rem 0 2rem}
+.featured-release h3,.singles-heading{font:clamp(2rem,4vw,3rem)/1 var(--serif);margin:0 0 .5rem}
+.featured-release p{margin:.35rem 0}
+.release-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,9rem),1fr));gap:1.1rem;list-style:none;margin:1rem 0 0;padding:0}
+.release-grid h4{margin:.55rem 0 .1rem;line-height:1.25}
+.release-grid p,.release-grid a{font-size:.9rem;margin:.2rem 0}
+.release-grid a,.featured-release a{display:inline-flex;align-items:center;min-height:44px}
+.release-cover{aspect-ratio:1;object-fit:cover;background:#e5d4bc}
+@media(max-width:450px){.featured-release{grid-template-columns:5.35rem minmax(0,1fr)}.release-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 <script type="application/ld+json">
 {
@@ -102,16 +111,48 @@ footer{border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-cont
   </section>
   <section class="page-section" id="music" aria-labelledby="music-heading">
     <h2 id="music-heading">Discography</h2>
-    <details>
-      <summary>Rose &amp; Promises · Debut EP</summary>
-      <p>New Dawn · Sober · Away · Forever · For You</p>
-      <a href="https://onerpm.link/184182050055" target="_blank" rel="noopener noreferrer">Listen to the EP ↗</a>
-    </details>
-    <details>
-      <summary>Selected singles</summary>
-      <p>Falling · Rain · Let Go · Your Life</p>
-      <a href="https://open.spotify.com/artist/5WEEhGsM3yy5VHz0nBBqcX" target="_blank" rel="noopener noreferrer">Explore on Spotify ↗</a>
-    </details>
+    <div class="featured-release">
+      <img class="release-cover" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/0f/61/240f6101-61db-e719-fb5e-757da8e6d645/0.jpg/300x300bb.jpg" alt="" width="300" height="300" loading="lazy" decoding="async">
+      <div>
+        <h3>Rose &amp; Promises</h3>
+        <p>Debut EP</p>
+        <p>New Dawn · Sober · Away · Forever · For You</p>
+        <a href="https://onerpm.link/184182050055" target="_blank" rel="noopener noreferrer">Listen to the EP ↗</a>
+      </div>
+    </div>
+    <h3 class="singles-heading">Singles</h3>
+    <ul class="release-grid">
+      <li>
+        <img class="release-cover" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7e/fd/2b/7efd2ba9-3e94-cfce-8d48-52a45d8193eb/0.jpg/300x300bb.jpg" alt="" width="300" height="300" loading="lazy" decoding="async">
+        <h4>Away</h4>
+        <a href="https://music.apple.com/us/album/away-single/6785669222" target="_blank" rel="noopener noreferrer" aria-label="Listen to Away on Apple Music">Listen on Apple Music ↗</a>
+      </li>
+      <li>
+        <img class="release-cover" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/77/df/98/77df98cd-647e-1b70-a302-af6d4aab6bc3/0.jpg/300x300bb.jpg" alt="" width="300" height="300" loading="lazy" decoding="async">
+        <h4>Sober</h4>
+        <a href="https://music.apple.com/us/album/sober-single/6785676479" target="_blank" rel="noopener noreferrer" aria-label="Listen to Sober on Apple Music">Listen on Apple Music ↗</a>
+      </li>
+      <li>
+        <img class="release-cover" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/34/da/e4/34dae4b6-e4ad-3381-b15f-81a063f98a63/7333591189599.jpg/300x300bb.jpg" alt="" width="300" height="300" loading="lazy" decoding="async">
+        <h4>Let Go</h4>
+        <a href="https://music.apple.com/us/album/let-go-single/6789285715" target="_blank" rel="noopener noreferrer" aria-label="Listen to Let Go on Apple Music">Listen on Apple Music ↗</a>
+      </li>
+      <li>
+        <img class="release-cover" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d9/9f/e4/d99fe416-425b-ed5e-35b3-632fd2722ead/7300340723915.jpg/300x300bb.jpg" alt="" width="300" height="300" loading="lazy" decoding="async">
+        <h4>Your Life</h4>
+        <a href="https://music.apple.com/us/album/your-life-single/1740908340" target="_blank" rel="noopener noreferrer" aria-label="Listen to Your Life on Apple Music">Listen on Apple Music ↗</a>
+      </li>
+      <li>
+        <img class="release-cover" src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/06/da/d3/06dad3af-745d-f367-8e76-52ae98cdfff9/7333475971944.jpg/300x300bb.jpg" alt="" width="300" height="300" loading="lazy" decoding="async">
+        <h4>Falling (feat. Lodù)</h4>
+        <a href="https://music.apple.com/us/album/falling-feat-lod%C3%B9-single/1732654189" target="_blank" rel="noopener noreferrer" aria-label="Listen to Falling (feat. Lodù) on Apple Music">Listen on Apple Music ↗</a>
+      </li>
+      <li>
+        <img class="release-cover" src="https://m.media-amazon.com/images/I/41rfqax4AUL.jpg" alt="" width="300" height="300" loading="lazy" decoding="async">
+        <h4>Rain</h4>
+        <p>Streaming link unavailable</p>
+      </li>
+    </ul>
   </section>
   <section class="page-section" id="about">
     <h2>About Lytt</h2>
