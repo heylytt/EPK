@@ -41,7 +41,7 @@ nav{display:flex;flex-wrap:wrap;gap:0 clamp(.8rem,3vw,2rem)}nav a{display:inline
 h2{font:clamp(2.5rem,5vw,4rem)/1 var(--serif);margin:0 0 .85rem}
 details{border-bottom:1px solid var(--line);padding:0 0 .25rem}details p{margin:.25rem 0 .8rem}summary{min-height:44px;padding:.6rem 0;cursor:pointer;font-weight:600}
 details a{display:inline-flex;align-items:center;min-height:44px}
-.bio-text{max-width:65ch}.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.5rem,2vw,1.5rem)}.gallery-grid img{aspect-ratio:3/4;object-fit:cover}
+.bio-text{max-width:65ch}
 .contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.contact-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.15rem .75rem;padding:.7rem 0;border-bottom:1px solid var(--line)}
 footer{border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem;padding-block:1rem}
 @media(max-width:650px){.spread,.contact-inner{grid-template-columns:1fr}.spread picture{aspect-ratio:4/3}.spread img{object-position:center 37%}}
@@ -127,31 +127,11 @@ footer{border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-cont
         His debut EP, <em>Rose &amp; Promises</em>, is a body of work built in the margins of a full life, and proof that passion held long enough eventually blooms.
       </p>
   </section>
-<!-- GALLERY -->
-<section class="page-section" id="press" aria-labelledby="press-heading">
-  <div>
-    <h2 class="section-label" id="press-heading">Press Photos</h2>
-    <p class="bio-text">For press images and photo credits, <a class="text-link" href="mailto:heylytt@gmail.com?subject=LYTT%20press%20images">contact Lytt</a>.</p>
-  </div>
-  <div class="gallery-grid">
-    <div class="gallery-item">
-      <picture><source type="image/webp" srcset="/assets/images/lytt-silhouette-480.webp 480w, /assets/images/lytt-silhouette-960.webp 960w, /assets/images/lytt-silhouette-1440.webp 1440w" sizes="(max-width: 768px) 88vw, 44vw"><img src="/assets/images/lytt-silhouette.jpg" alt="LYTT silhouette" width="2160" height="3240" loading="lazy" decoding="async" /></picture>
-    </div>
-    <div class="gallery-item">
-      <picture><source type="image/webp" srcset="/assets/images/lytt-portrait-480.webp 480w, /assets/images/lytt-portrait-960.webp 960w, /assets/images/lytt-portrait-1440.webp 1440w" sizes="(max-width: 768px) 88vw, 44vw"><img src="/assets/images/lytt-portrait.jpg" alt="LYTT portrait" width="2160" height="3240" loading="lazy" decoding="async" /></picture>
-    </div>
-    <div class="gallery-item">
-      <picture><source type="image/webp" srcset="/assets/images/lytt-seated-480.webp 480w, /assets/images/lytt-seated-960.webp 960w, /assets/images/lytt-seated-1440.webp 1440w" sizes="(max-width: 768px) 88vw, 44vw"><img src="/assets/images/lytt-seated.jpg" alt="LYTT seated" width="2160" height="3240" loading="lazy" decoding="async" /></picture>
-    </div>
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section class="page-section" id="contact" aria-labelledby="contact-heading">
   <div class="contact-inner">
     <div>
       <h2 id="contact-heading">Press &amp; booking</h2>
-      <a href="#press">View press photos</a>
     </div>
     <div class="contact-links">
       <div class="contact-row">
