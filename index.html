@@ -46,6 +46,8 @@ details a{display:inline-flex;align-items:center;min-height:44px}
 .contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.contact-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.15rem .75rem;padding:.7rem 0;border-bottom:1px solid var(--line)}
 footer{border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem;padding-block:1rem}
 @media(max-width:650px){.spread,.contact-inner{grid-template-columns:1fr}.spread picture{aspect-ratio:4/3}.spread img{object-position:center 37%}}
+.wordmark{width:5rem;height:3.5rem}.wordmark img{width:7.1rem}
+.music-title{display:flex;align-items:center;justify-content:space-between;gap:.75rem}.music-title h2{margin:0}.listen-mark{display:grid;place-items:center;width:4.5rem;height:4.5rem;overflow:hidden;flex:none}.listen-mark img{width:7rem;max-width:none;grid-area:1/1;place-self:center}
 </style>
 <script type="application/ld+json">
 {
@@ -88,7 +90,7 @@ footer{border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-cont
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
 <header class="site-header">
-  <a class="wordmark" href="/" aria-label="Lytt home"><img src="/assets/images/lytt-listen-black.svg" width="1080" height="1080" alt="Lytt Listen"></a>
+  <a class="wordmark" href="/" aria-label="Lytt home"><img src="/assets/images/lytt-wordmark-black.svg" width="1080" height="1080" alt="Lytt"></a>
   <nav aria-label="Page sections"><a href="#about">Story</a><a href="#music">Music</a><a href="#contact">Press &amp; booking</a></nav>
 </header>
 <main id="main">
@@ -101,7 +103,10 @@ footer{border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-cont
     <picture><source type="image/webp" srcset="/assets/images/lytt-about-480.webp 480w, /assets/images/lytt-about-960.webp 960w, /assets/images/lytt-about-1440.webp 1440w" sizes="(max-width: 768px) calc(100vw - 2rem), 42vw"><img class="bio-img" src="/assets/images/lytt-about.jpg" alt="Black-and-white portrait of Lytt" width="2979" height="3282" fetchpriority="high" /></picture>
   </section>
   <section class="page-section" id="music" aria-labelledby="music-heading">
-    <h2 id="music-heading">Discography</h2>
+    <div class="music-title">
+      <h2 id="music-heading">Discography</h2>
+      <span class="listen-mark"><img src="/assets/images/lytt-listen-black.svg" width="1080" height="1080" alt="Lytt Listen"></span>
+    </div>
     <details>
       <summary>Rose &amp; Promises · Debut EP</summary>
       <p>New Dawn · Sober · Away · Forever · For You</p>
