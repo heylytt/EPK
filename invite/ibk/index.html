@@ -107,7 +107,7 @@ const envelope = document.querySelector('details');
 const invitationVideo = document.querySelector('iframe[data-video-src]');
 envelope.addEventListener('toggle', () => {
   if (envelope.open) {
-    invitationVideo.src = invitationVideo.dataset.videoSrc + '?autoplay=1&playsinline=1';
+    invitationVideo.src = invitationVideo.dataset.videoSrc + '?playsinline=1';
   } else {
     invitationVideo.removeAttribute('src');
   }
