@@ -21,36 +21,34 @@ section.panel{padding:3rem 0 6rem;text-align:center}.panel h2{font-size:clamp(2.
 </head>
 <body><div class="stars" aria-hidden="true"></div><main>
 <header class="hero container">
-<div class="eyebrow">To the one who makes my world brighter</div><div class="heart" aria-hidden="true">♡</div>
+<div class="eyebrow">For Sharlyn, with all my heart</div><div class="heart" aria-hidden="true">♡</div>
 <h1>Happy Birthday,<em>Sharlyn.</em></h1>
-<p class="intro">If I could wrap up every beautiful thing you make me feel, it still wouldn't be enough. So I made you this little place in the universe. Just for you.</p>
-<a class="btn" href="#letter">I made you something ♡</a>
+<p class="intro">Of all the beautiful things life could have brought into my world, I am so grateful it brought me you. Today, I just want you to feel how loved you are.</p>
+<a class="btn" href="#letter">A little piece of my heart ♡</a>
 </header>
 <section class="panel container" id="letter" aria-labelledby="letter-title">
-<div class="eyebrow">A letter from my heart</div><h2 id="letter-title">A little love note</h2>
-<p class="lead">Some feelings deserve more than a quick birthday text.</p>
+<div class="eyebrow">Words I hope you keep close</div><h2 id="letter-title">If my heart could write a letter…</h2>
+<p class="lead">There are a thousand ways to say I love you, but I wanted you to have a few words you can return to whenever you need them.</p>
 <button class="btn" id="open-letter" type="button" aria-expanded="false" aria-controls="birthday-letter">Open your letter ✉</button>
 <article class="letter" id="birthday-letter" hidden>
 <p>My dearest Sharlyn,</p>
-<p>Happy birthday to the person who makes ordinary days feel extraordinary. I hope this new year brings you peace, laughter, beautiful surprises, and all the love your heart can hold.</p>
-<p>Today is about celebrating you — your light, your smile, your heart, and all the little things that make you who you are. I hope you always remember how deeply you are loved.</p>
-<p>Here's to more memories, more laughter, more music, and so many beautiful moments still to come.</p>
+<p>There are moments when words feel too small for everything I want to tell you. You have a way of making the ordinary feel beautiful, and I treasure that more than I can explain.</p>
+<p>On your birthday, I wish you a year filled with the kind of joy that stays, peace that settles deep in your heart, and dreams that find their way into reality. I hope you see in yourself even a little of the beauty I see in you.</p>
+<p>Thank you for being you, Sharlyn. For your laughter, your tenderness, and for every memory we have yet to make. Wherever life takes us, I hope today reminds you that you are cherished beyond words.</p>
+<p>And when this letter ends, I have one more way to say what my heart feels.</p>
 <p class="signature">With all my love,<br>Lytt ♡</p>
 </article>
 </section>
 <section class="panel container" id="song" aria-labelledby="song-title">
-<div class="divider" aria-hidden="true">✧ ♡ ✧</div><div class="eyebrow">One more surprise</div>
-<h2 id="song-title">I made this for you.</h2>
-<p class="lead">Some things are easier to sing than to say. This one's called <strong>Baby</strong>.</p>
-<div class="video-frame" id="video-container"><div class="video-placeholder"><span aria-hidden="true">♫</span><h3>Baby</h3><p>Your special video will play here when it's added.</p></div></div>
-<p class="note">Made with love, just for your birthday.</p>
+<div class="divider" aria-hidden="true">✧ ♡ ✧</div><div class="eyebrow">A song from my heart to yours</div>
+<h2 id="song-title">Sharlyn, this one is for you.</h2>
+<p class="lead">When words are not enough, there is music. Press play on <strong>Baby</strong> — and know that every note comes with love.</p>
+<div class="video-frame" id="video-container"><iframe src="https://www.youtube-nocookie.com/embed/xXI_L_HGkco" title="Baby — a video for Sharlyn" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<p class="note">If the player does not load, <a href="https://youtu.be/xXI_L_HGkco" target="_blank" rel="noopener noreferrer">watch Baby on YouTube</a>.</p>
 </section></main><footer>For you, today and every day. ♡</footer>
 <script>
 const button=document.getElementById('open-letter');
 const letter=document.getElementById('birthday-letter');
 button.addEventListener('click',()=>{const opening=letter.hidden;letter.hidden=!opening;button.setAttribute('aria-expanded',String(opening));button.textContent=opening?'Close your letter ✉':'Open your letter ✉';if(opening)letter.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'center'});});
-/* Official Baby video selected by Lytt. */
-const BABY_YOUTUBE_ID='xXI_L_HGkco';
-if(/^[a-zA-Z0-9_-]{11}$/.test(BABY_YOUTUBE_ID)){const f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+BABY_YOUTUBE_ID;f.title='Baby — birthday video';f.loading='lazy';f.referrerPolicy='strict-origin-when-cross-origin';f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';f.allowFullscreen=true;const c=document.getElementById('video-container');c.replaceChildren(f);}
 </script>
 </body></html>
