@@ -49,8 +49,8 @@ section.panel{padding:3rem 0 6rem;text-align:center}.panel h2{font-size:clamp(2.
 const button=document.getElementById('open-letter');
 const letter=document.getElementById('birthday-letter');
 button.addEventListener('click',()=>{const opening=letter.hidden;letter.hidden=!opening;button.setAttribute('aria-expanded',String(opening));button.textContent=opening?'Close your letter ✉':'Open your letter ✉';if(opening)letter.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'center'});});
-/* Replace with the exact official YouTube video ID after confirmation. */
-const BABY_YOUTUBE_ID='';
+/* Official Baby video selected by Lytt. */
+const BABY_YOUTUBE_ID='xXI_L_HGkco';
 if(/^[a-zA-Z0-9_-]{11}$/.test(BABY_YOUTUBE_ID)){const f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+BABY_YOUTUBE_ID;f.title='Baby — birthday video';f.loading='lazy';f.referrerPolicy='strict-origin-when-cross-origin';f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';f.allowFullscreen=true;const c=document.getElementById('video-container');c.replaceChildren(f);}
 </script>
 </body></html>
